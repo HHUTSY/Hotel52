@@ -1,0 +1,7 @@
+node_modules/
+# Оригінали фото (106 МБ) — не потрібні на хостингу, відновлюються: node build/images.mjs fetch
+src/photos-original/
+.claude/
+*.log
+.DS_Store
+Thumbs.db
