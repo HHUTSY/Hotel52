@@ -83,7 +83,7 @@ function head({ title, description, path, ogImage = 'assets/img/og.jpg', jsonld,
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:image" content="${site.url}${ogImage}">
+<meta property="og:image" content="${process.env.ASSETS_URL || site.url}${ogImage}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">

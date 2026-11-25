@@ -19,6 +19,23 @@ npm run images            # фото → AVIF/WebP 640/1280/1920 + blur-плей
 node build/images.mjs fetch   # (раз) завантажити оригінали фото з поточного сайту
 ```
 
+## Демо для клієнтів (GitHub Pages)
+
+Живе посилання: **https://hhutsy.github.io/Hotel52/**. Гілка `gh-pages` — це вміст папки `site/`.
+
+Оновити демо після змін:
+
+```
+npm run build:demo        # як build, але превʼю посилань (og:image) береться з GitHub Pages
+git add -A && git commit -m "Оновлення"
+git push
+npm run deploy            # публікує site/ у гілку gh-pages
+```
+
+На демо-домені модуль Servio не запускається (він дозволений тільки для hotel52.od.ua), тому на сторінці бронювання видно пояснення «це демо-версія».
+
+Для перенесення на hotel52.od.ua запускайте звичайний `npm run build`.
+
 ## Де що міняти
 
 | Що | Файл |

@@ -5,6 +5,9 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import sharp from 'sharp';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
+// --demo: превʼю посилань (og:image) береться з GitHub Pages, поки сайт не переїхав на hotel52.od.ua
+if (process.argv.includes('--demo')) process.env.ASSETS_URL = 'https://hhutsy.github.io/Hotel52/';
 const SRC = path.join(ROOT, 'src');
 const OUT = path.join(ROOT, 'site');
 

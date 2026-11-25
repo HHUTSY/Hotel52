@@ -30,7 +30,7 @@ export default function render() {
 <link rel="alternate" hreflang="uk" href="${site.url}">
 <link rel="alternate" hreflang="en" href="${site.url}en.html">
 <meta name="theme-color" content="#F4EDE3">
-<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:image" content="${site.url}assets/img/og.jpg">
+<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:image" content="${process.env.ASSETS_URL || site.url}assets/img/og.jpg">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap">
